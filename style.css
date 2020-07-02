@@ -1,0 +1,338 @@
+.body{
+    font-family: sans-serif;
+}
+.header{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header__buscar{
+    display: flex;
+    margin-left: 70px;
+    
+}
+.header__buscar img{
+    
+    margin-bottom: none;
+}
+
+.header__buscar input{
+    outline: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;    
+    height: 30px;
+    width: 650px;   
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.header__menu {
+    margin-top: 4px;
+    margin-right: 20px;
+    
+}
+.header__menu img{
+    margin-right: 20px;
+    width: 35px;
+}
+.header__menu button{
+    margin-right: 20px;
+}
+.header__menu ul{
+    display: none;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px;
+    margin: 0px 0px 0px -14;
+    padding-left: 54px;
+}
+.header__menu li{
+    /*El primer 0px afecta al top y bottom. El segundo 10px Afecta a Left y Right.*/
+    margin: 0px 10px;
+}
+.header__menu:hover ul, ul:hover{
+    display: block;
+}
+
+
+
+
+
+
+    .body{
+        margin: 0px;
+    }
+    .carousel{
+        margin-left: 90px;
+        width: 100%;
+        overflow: hidden;
+        padding: 30px;
+        position: relative;
+    }
+    .carousel__container{
+        white-space: nowrap;
+        margin: 70px 0px;
+        padding-bottom: 10px;
+    }
+
+                                                /********************* ANIMACIÓN *********************/
+
+    .carousel__item{
+        background-color:cyan;
+        width: 200px;
+        height: 150px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 30px;
+        display: inline-block;
+        cursor: pointer;
+        transition: 450ms all;
+        transform-origin: center center; 
+	    position: relative;
+    }       
+    .carousel__container:hover .carousel__item{
+        opacity: 0.3;  
+    }
+    .carousel__container:hover .carousel__item:hover{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    .carousel__item img{
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }   
+
+
+    
+                                                /********************* ANIMACIÓN 1 *********************/
+
+    .carousel__item-anim1{
+        background-color:cyan;
+        width: 200px;
+        height: 150px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 30px;
+        display: inline-block;
+        cursor: pointer;
+        transition: 450ms all;
+        transform-origin: center left;
+	    position: relative; 
+    }      
+    .carousel__container:hover .carousel__item-anim1{
+        opacity: 0.3;  
+    }
+    .carousel__container:hover .carousel__item-anim1:hover{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    .carousel__item-anim1 img{
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+                                                /********************* ANIMACIÓN 2 *********************/
+
+
+    .carousel__item-anim2{
+        background-color:cyan;
+        width: 200px;
+        height: 150px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 30px;
+        display: inline-block;
+        cursor: pointer;
+        transition: 450ms all;
+        transform-origin: center right;
+	position: relative; 
+    }     
+    .carousel__container:hover .carousel__item-anim2{
+        opacity: 0.3;  
+    }
+    .carousel__container:hover .carousel__item-anim2:hover{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    .carousel__item-anim2 img{
+        transition: 450ms opacity;
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+
+                                                /********************* DETALLES *********************/
+
+    .details{  
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);               
+        transition: 450ms opacity;
+        padding: 100px;        
+        display: flex;
+        justify-content: center;       
+        opacity: 0;        
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .details p{
+        color: white;
+        font-family: "Muli", sans-serif;
+        font-size: 11px;
+        padding: 11px;
+    }
+    .details:hover{              
+        opacity: 1;
+    }
+
+
+
+
+    .destacados_title{
+        font-family: "Muli", sans-serif;
+        font-size: 25px;    
+        padding: 25px;
+        width: 100%;
+    }
+    .ensam_titles{
+        font-family: "Muli", sans-serif;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .body{
+        
+        margin: 0px;
+    }
+    .destacados{
+        width: 100%;
+        height: 900px;
+        overflow: hidden;
+        padding: 30px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .destacados_container{
+        white-space: nowrap;
+        margin: 200px 0px;
+        padding-bottom: 10px;
+    }
+    .destacados_item{
+        /*TRABAJANDO ANIMACIONES*/
+        background-color:#EDCDF0;
+        width: 200px;
+        height: 250px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        transition: 450ms all;
+        position: relative;
+    }
+    
+    .destacados_container:hover .destacados_item{
+        opacity: 0.95
+    }
+    .destacados_container:hover .destacados_item:hover{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    .destacados_item img{
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+                                                /************************ DETALLES ************************/
+    
+    .destacados_details:hover {    
+        opacity: 1;
+    }
+    .destacados_details{
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        transition: 450ms opacity;        
+        opacity: 0; 
+        position: absolute;           
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .destacados_details p{
+        font-family: "Muli", sans-serif;
+        font-size: 15px;
+        padding: 70px;
+        color: white;
+    }
+    
+    
+                                                /************************ ENSAMBLAJES ************************/
+    .ensamblajes_container{
+        white-space: nowrap;
+        margin: 200px 0px;
+        padding-bottom: 10px;
+        padding-left: 95px;
+        
+    }
+    .ensamblajes_item{
+        background-color: rgba(221, 186, 231, 0.836);
+        width: 250px;
+        height: 200px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        transition: 450ms all;
+        position: relative;
+    }
+    .ensamblajes_container .ensamblajes_item:hover{
+        opacity: 0.3;
+    }
+    .ensamblajes_container:hover .ensamblajes_item:hover{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    .ensamblajes_item img{
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .ensamblajes_details{
+        font-family: "Muli", sans-serif;
+        font-size: 15px;
+        
+        color: white;
+    }
+
+    .footer{
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+    }
+    .footer a{
+        cursor: pointer;
+        font-size: 14px;
+        padding-left: 30px;
+        text-decoration: none;        
+    }
+    .footer a:hover{
+        text-decoration: underline;
+    }
